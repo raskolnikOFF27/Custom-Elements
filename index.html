@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS - Practicles</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/base.min.css" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+
+  <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css"/>
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="custom__elements">
+    <div class="checkbox">
+      <ul aria-label="лист категорий" class="checkbox__list">
+        <h3 class="checkbox-title">Категории:</h3>
+
+        <li class="checkbox__item">
+
+          <label class="checkbox__label">
+            <input class="checkbox__input" type="checkbox"> <span class="custom__checkbox"></span> Динозавры
+          </label>
+
+        </li>
+
+        <li class="checkbox__item">
+
+          <label class="checkbox__label">
+            <input class="checkbox__input" type="checkbox"> <span class="custom__checkbox"></span> Медведи
+          </label>
+
+        </li>
+
+        <li class="checkbox__item">
+
+          <label class="checkbox__label">
+            <input class="checkbox__input" type="checkbox"> <span class="custom__checkbox"></span> Косули
+          </label>
+
+        </li>
+
+        <li class="checkbox__item">
+
+          <label class="checkbox__label">
+            <input class="checkbox__input" type="checkbox"> <span class="custom__checkbox"></span> Лисы
+          </label>
+
+        </li>
+
+        <li class="checkbox__item">
+
+          <label class="checkbox__label">
+            <input class="checkbox__input" type="checkbox"> <span class="custom__checkbox"></span> Волки
+          </label>
+
+        </li>
+
+        <li class="checkbox__item">
+
+          <label class="checkbox__label">
+            <input class="checkbox__input" type="checkbox"> <span class="custom__checkbox"></span> Олени и лоси
+          </label>
+
+        </li>
+      </ul>
+    </div>
+
+<!-- custom-select -->
+
+<div class="select__container">
+<select aria-label="кастомный селект" class="js-choice">
+  <option value="">Материал</option>
+  <option>Древесина</option>
+  <option>Металл</option>
+  <option>Камень</option>
+  <option>Пластик</option>
+  <option>Композитный</option>
+  <option>Гипс</option>
+</select>
+</div>
+
+<!--maps  -->
+
+<div class="yandex-map" id="myMap1"></div>
+
+<!-- custom-scroll -->
+
+  <div data-simplebar class="customScroll scroll-cont">
+    <p class="scroll-descr">
+      Сложно сказать, почему многие известные личности представлены в исключительно положительном свете. Лишь активно развивающиеся страны третьего мира будут объективно рассмотрены соответствующими инстанциями. Мы вынуждены отталкиваться от того, что высокотехнологичная концепция общественного уклада представляет собой интересный эксперимент проверки глубокомысленных рассуждений. Имеется спорная точка зрения, гласящая примерно следующее: непосредственные участники технического прогресса освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, обнародованы. Значимость этих проблем настолько очевидна, что социально-экономическое развитие, а также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для первоочередных требований.
+      Сложно сказать, почему многие известные личности представлены в исключительно положительном свете. Лишь активно развивающиеся страны третьего мира будут объективно рассмотрены соответствующими инстанциями. Мы вынуждены отталкиваться от того, что высокотехнологичная концепция общественного уклада представляет собой интересный эксперимент проверки глубокомысленных рассуждений. Имеется спорная точка зрения, гласящая примерно следующее: непосредственные участники технического прогресса освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, обнародованы. Значимость этих проблем настолько очевидна, что социально-экономическое развитие, а также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для первоочередных требований.
+      Сложно сказать, почему многие известные личности представлены в исключительно положительном свете. Лишь активно развивающиеся страны третьего мира будут объективно рассмотрены соответствующими инстанциями. Мы вынуждены отталкиваться от того, что высокотехнологичная концепция общественного уклада представляет собой интересный эксперимент проверки глубокомысленных рассуждений. Имеется спорная точка зрения, гласящая примерно следующее: непосредственные участники технического прогресса освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, обнародованы. Значимость этих проблем настолько очевидна, что социально-экономическое развитие, а также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для первоочередных требований.
+    </p>
+  </div>
+
+
+  <!-- custom-form -->
+
+  <div class="form__container">
+    <div class="form__inner">
+    <form action="" class="form">
+      <div class="form__inner-cont">
+      <input type="text" class="name form__input" name="Имя" required placeholder="Имя*">
+      </div>
+
+      <div class="form__inner-cont">
+      <input type="tel" class="tel form__input" name="tel" required placeholder="Телефон*">
+      </div>
+
+      <div class="form__inner-cont">
+      <input type="email" class="mail form__input" name="email" required placeholder="Email*">
+      </div>
+
+      <button aria-label="отправить данные" class="form__btn">Заказать</button>
+    </form>
+  </div>
+  </div>
+
+<!-- tooltips -->
+
+<!-- <div class="tooltip__container">
+  <p class="tooltip__descr">
+    Следует отметить, что социально-экономическое развитие способствует повышению качества переосмысления внешнеэкономических политик.
+  </p>
+  <span class="tooltip__marker">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM8 3C7.33333 3 7 3.31919 7 3.95758C7 4.60026 7.33333 4.92159 8 4.92159C8.33333 4.92159 8.58233 4.83805 8.74699 4.67095C8.91566 4.49957 9 4.26178 9 3.95758C9 3.31919 8.66667 3 8 3ZM7.07831 13H8.91566V5.81491H7.07831V13Z" fill="#BCBCBC"/>
+    </svg>
+  </span>
+  <div class="popup">
+    <p class="popup-descr">Глава 2, страница 176</p>
+  </div>
+</div> -->
+
+<div class="tooltip__container">
+  <p class="tooltip__descr">
+    Следует отметить, что <br> социально-экономическое развитие способствует повышению качества переосмысления <br> внешнеэкономических политик. <span data-tippy-content="Глава 2, страница 176" class="help">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM8 3C7.33333 3 7 3.31919 7 3.95758C7 4.60026 7.33333 4.92159 8 4.92159C8.33333 4.92159 8.58233 4.83805 8.74699 4.67095C8.91566 4.49957 9 4.26178 9 3.95758C9 3.31919 8.66667 3 8 3ZM7.07831 13H8.91566V5.81491H7.07831V13Z" fill="#BCBCBC"/>
+      </svg>
+      </span>
+  </p>
+</div>
+
+
+
+</div>
+
+</div>
+
+<script src="js-libraries/inputmask.min.js"></script>
+
+<script src="js-libraries/just-validate.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/scripts/choices.min.js"></script>
+
+<script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+
+<script src="https://unpkg.com/tippy.js@6"></script>
+
+<script src="js/script.js"></script>
+
+<noscript>
+  <style>
+    .simplebar-content-wrapper {
+      scrollbar-width: auto;
+      -ms-overflow-style: auto;
+    }
+
+    .simplebar-content-wrapper::-webkit-scrollbar,
+    .simplebar-hide-scrollbar::-webkit-scrollbar {
+      display: initial;
+      width: initial;
+      height: initial;
+    }
+  </style>
+</noscript>
+</body>
+</html>
